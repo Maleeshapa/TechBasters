@@ -7,76 +7,123 @@
     <title>TechBasters</title>
 
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
     <!-- //google fonts -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Reenie+Beanie&display=swap" rel="stylesheet">
+
+    <style>
+        .reenie-beanie-regular {
+            font-family: "Reenie Beanie", cursive;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 40px;
+            color: white;
+        }
+
+        .acme-regular {
+            font-family: "Acme", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
 
 
+        .view {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            /* Ensure the image does not overflow */
+        }
+
+        .view img {
+            object-fit: cover;
+            /* Ensure the image covers the entire container */
+            height: 100%;
+            width: 100%;
+        }
+
+        .mask {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            /* Set the color of the text */
+            text-align: center;
+            /* Center the text */
+        }
+
+        .navbar {
+            background-color: transparent !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            /* Set the color of the navigation links */
+        }
+
+        .color {
+            color: #0a0a0a;
+            font-size: 60px;
+        }
+    </style>
 
 </head>
 
 <body>
 
-    
-    <style>
-        
-
-        .reenie-beanie-regular {
-            font-family: "Reenie Beanie", cursive;
-            font-weight: 600;
-            font-style: normal;
-            font-size: 30px;
-        }
-        
-        body{ height:100vh;
-            width:100vW;
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            filter:brightness(0.7);
-            position:absolute;
-            background-image: url('https://shorturl.at/fuDI1');}
-
-    </style>
-    
-
-    <div>
-
-        
-        <nav class="navbar navbar-expand-lg bg-transparent">
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
 
             <div class="container-fluid">
 
-            <a class="navbar-brand  reenie-beanie-regular" href="#">TechBaster</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav navbar-collapse justify-content-end">
-                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only"></span></a>
-                    <a class="nav-item nav-link" href="#">Menu</a>
-                    <a class="nav-item nav-link" href="#">Services</a>
-                    <a class="nav-item nav-link" href="#">Contact</a>
+                <a class="navbar-brand reenie-beanie-regular" href="#">TechBaster</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
         </nav>
+    </header>
 
-        
-
-
+    <div class="view">
+        <img src="https://shorturl.at/fuDI1" class="img-fluid" alt="backgound image is here">
+        <div class="mask pattern-1 flex-center">
+            <p class="white-text color acme-regular">Let's Bring Your <br> Ideas To The Reality</p>
+        </div>
     </div>
-    
 
 
-
+</body>
 
 </html>
