@@ -89,6 +89,9 @@
     text-align: center;
     color: #0a0a0a;
     padding-top: 50px;
+    height: 100vh;
+    
+    
 }
 
 .Kavidu{
@@ -144,4 +147,8 @@ footer li {
 footer li a {
     text-decoration: none;
     color: rgb(0, 106, 255);
+}
+
+.row{
+    padding-top: 50px;
 }
