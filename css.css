@@ -82,7 +82,13 @@
     font-weight: 500;
     color: #000000;
 }
-
+.sub-txt{
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 5px;
+}
 .cat-img {
     width: 300px;
     height: 300px;
