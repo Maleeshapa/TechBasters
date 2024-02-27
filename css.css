@@ -69,12 +69,17 @@
 }
 
 .img {
-    width: 200px;
+    width: auto;
     height: 250px;
 }
 
 .r-img {
     padding-top: 40px;
+}
+.txt{
+    font-size: 40px;
+    font-weight: 500;
+    color: #000000;
 }
 
 .cat-img {
